@@ -17,7 +17,8 @@ export default function VerifyDelivery() {
     setLoading(true)
 
     try {
-      const { deliveryVerifier } = getContracts()
+      // Add await here to properly resolve the Promise
+      const { deliveryVerifier } = await getContracts()
       const tx = await deliveryVerifier.verifyDelivery(trackingId)
       await tx.wait()
       alert("Delivery verified successfully!")
@@ -44,4 +45,3 @@ export default function VerifyDelivery() {
     </div>
   )
 }
-

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { getContracts } from "@/lib/contracts"
-import { ethers } from "ethers"
+import { ethers, parseEther } from "ethers"
 
 export default function CreateDelivery() {
   const [formData, setFormData] = useState<{
@@ -53,7 +53,7 @@ export default function CreateDelivery() {
       const tx = await deliveryStorage.createDelivery(
         formData.nametag,
         formData.pickupStation,
-        ethers.utils.parseEther(formData.amount),
+        parseEther(formData.amount),
         formData.recipientName,
         formData.senderName,
         formData.recipientPhone,
@@ -140,4 +140,3 @@ export default function CreateDelivery() {
     </div>
   )
 }
-

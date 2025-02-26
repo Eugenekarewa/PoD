@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { getContracts } from "@/lib/contracts"
+import { formatEther } from "ethers"
 
 export default function TrackDelivery() {
   const [trackingId, setTrackingId] = useState("")
@@ -18,7 +19,8 @@ export default function TrackDelivery() {
     setLoading(true)
 
     try {
-      const { deliveryTracker } = getContracts()
+      // Add await here to properly resolve the Promise
+      const { deliveryTracker } = await getContracts()
       const info = await deliveryTracker.trackDelivery(trackingId)
       setDeliveryInfo(info)
     } catch (error) {
@@ -52,7 +54,7 @@ export default function TrackDelivery() {
             <strong>Pickup Station:</strong> {deliveryInfo.pickupStation}
           </p>
           <p>
-            <strong>Amount:</strong> {deliveryInfo.amount.toString()} Wei
+            <strong>Amount:</strong> {formatEther(deliveryInfo.amount)} ETH
           </p>
           <p>
             <strong>Recipient Name:</strong> {deliveryInfo.recipientName}
@@ -77,4 +79,3 @@ export default function TrackDelivery() {
     </div>
   )
 }
-

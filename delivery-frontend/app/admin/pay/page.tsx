@@ -17,7 +17,8 @@ export default function IssuePayment() {
     setLoading(true)
 
     try {
-      const { paymentIssuer } = getContracts()
+      // Add await here to properly resolve the Promise
+      const { paymentIssuer } = await getContracts()
       const tx = await paymentIssuer.issuePayment(trackingId)
       await tx.wait()
       alert("Payment issued successfully!")
@@ -44,4 +45,3 @@ export default function IssuePayment() {
     </div>
   )
 }
-
