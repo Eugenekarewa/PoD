@@ -1,0 +1,35 @@
+Deploying contracts with the account: 0xC3Ee82B7a785617C1Cb5FA9f3C703Dec854f975a
+DeliveryStorage deployed to: 0x6565a7F6B9D2bB1850148d5E1d94C90CCFE9754a
+Waiting for 5 confirmations...
+Verifying DeliveryStorage contract...
+The contract 0x6565a7F6B9D2bB1850148d5E1d94C90CCFE9754a has already been verified on the block explorer. If you're trying to verify a partially verified contract, please use the --force flag.
+https://sepolia.etherscan.io/address/0x6565a7F6B9D2bB1850148d5E1d94C90CCFE9754a#code
+
+DeliveryTracker deployed to: 0x0f96E79f1084a1B75cF37807cceEb14564cBEc2E
+Waiting for 5 confirmations...
+Verifying DeliveryTracker contract...
+The contract 0x0f96E79f1084a1B75cF37807cceEb14564cBEc2E has already been verified on the block explorer. If you're trying to verify a partially verified contract, please use the --force flag.
+https://sepolia.etherscan.io/address/0x0f96E79f1084a1B75cF37807cceEb14564cBEc2E#code
+
+DeliveryVerifier deployed to: 0x449A39750d0Ed8309b172a483951E52CDB29694D
+Waiting for 5 confirmations...
+Verifying DeliveryVerifier contract...
+The contract 0x449A39750d0Ed8309b172a483951E52CDB29694D has already been verified on the block explorer. If you're trying to verify a partially verified contract, please use the --force flag.
+https://sepolia.etherscan.io/address/0x449A39750d0Ed8309b172a483951E52CDB29694D#code
+
+PaymentIssuer deployed to: 0x523C863F9557989DE2414722B75C4C4D722EDC68
+Waiting for 5 confirmations...
+Verifying PaymentIssuer contract...
+Successfully submitted source code for contract
+contracts/PaymentIssuer.sol:PaymentIssuer at 0x523C863F9557989DE2414722B75C4C4D722EDC68
+for verification on the block explorer. Waiting for verification result...
+
+Successfully verified contract PaymentIssuer on the block explorer.
+https://sepolia.etherscan.io/address/0x523C863F9557989DE2414722B75C4C4D722EDC68#code
+
+
+Contract Addresses:
+DeliveryStorage: 0x6565a7F6B9D2bB1850148d5E1d94C90CCFE9754a
+DeliveryTracker: 0x0f96E79f1084a1B75cF37807cceEb14564cBEc2E
+DeliveryVerifier: 0x449A39750d0Ed8309b172a483951E52CDB29694D
+PaymentIssuer: 0x523C863F9557989DE2414722B75C4C4D722EDC68
